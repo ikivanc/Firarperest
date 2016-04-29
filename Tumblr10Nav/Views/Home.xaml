@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="Tumblr10Nav.Views.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tumblr10Nav.Controls"    
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"    
+    >
+
+    <Grid Background="#2e3b44">
+        <local:AdaptiveGridView x:Name="gridViewPhotos" 
+                                SelectionChanged="gridViewPhotos_SelectionChanged"
+                                       MinItemHeight="105"
+                                       MinItemWidth="315">
+            <local:AdaptiveGridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid x:Name="mygrid" Background="Blue">
+                        <Image Source="{Binding Thumbnail}" x:Name="image" Stretch="UniformToFill"/>
+                        <Rectangle Fill="#7F0068FF"/>
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding Title}" VerticalAlignment="Center" TextAlignment="Center" Foreground="White" FontSize="64" FontFamily="Segoe WP SemiLight"/>
+                    </Grid>
+                </DataTemplate>
+            </local:AdaptiveGridView.ItemTemplate>
+            <local:AdaptiveGridView.ItemContainerStyle>
+                <Style TargetType="GridViewItem">
+                    <Setter Property="HorizontalContentAlignment"
+                            Value="Stretch" />
+                    <Setter Property="HorizontalAlignment"
+                            Value="Stretch" />
+                    <Setter Property="VerticalContentAlignment"
+                            Value="Stretch" />
+                    <Setter Property="VerticalAlignment"
+                            Value="Stretch" />
+                    <Setter Property="Margin"
+                            Value="0" />
+                </Style>
+            </local:AdaptiveGridView.ItemContainerStyle>
+            <local:AdaptiveGridView.ItemContainerTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition />
+                </TransitionCollection>
+            </local:AdaptiveGridView.ItemContainerTransitions>
+        </local:AdaptiveGridView>
+        
+
+
+        <!--<GridView  Margin="0"  ItemContainerStyle="{StaticResource GalleryItemStyleTemplate}" >
+            --><!--<GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid x:Uid="WarpGrid" Orientation="Horizontal" MaximumRowsOrColumns="5" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>--><!--
+
+            <GridView.ItemTemplate>
+               
+            </GridView.ItemTemplate>
+        </GridView>-->
+        <local:Preloader x:Name="preloader" Margin="0" d:LayoutOverrides="Width"/>
+
+    </Grid>
+</Page>
