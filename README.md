@@ -1,7 +1,7 @@
 # Firarperest - Native Universal Windows Platform Photo Portfolio Application
-Firarperest is a Windows 10 Universal Windows Platform  Photo Portfolio Application. All photos are hosted on http://ikivanc.tumblr.com/ 
+Firarperest is a Windows 10 Universal Windows Platform Application to showcase my Photo Portfolio. I love photography and I compile photos on my personal blog whenever I visit new places. All photos are hosted on http://ikivanc.tumblr.com .Using UWP template I would like to add new features such as stylish User Interface, data visulisation on map, places visited by country, photo gallery and so on. 
 
-In this sample project, you will be able understand how you can use Universal Windows Platform features. The starter project uses the sample data files that are part of the project in Tumblr10.cs file. 
+In this sample project, you will be able understand how you can use Universal Windows Platform features on different Windows Devices families including Desktop, Tablet, Phone and Hololens. Project uses the sample data files that are part of the project in Tumblr10.cs file. 
 
 ![](Screenshots/firarperest1.gif)
 
