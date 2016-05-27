@@ -7,7 +7,7 @@ In this sample project, you will be able understand how you can use Universal Wi
 
 ## Prerequisites
 1. You must have Visual Studio 2015.
-2. You must have Visual Studio 2015 and the Windows Software Development Kit (SDK) for Windows 10 (10.0.10240.0) installed. https://dev.windows.com/en-us/downloads/windows-10-sdk
+2. You must have Visual Studio 2015 and the Windows Software Development Kit (SDK) for Windows 10 (10.0.10560.0) installed. https://dev.windows.com/en-us/downloads/windows-10-sdk
 
 ## Build the sample
 1. If you download the samples ZIP, be sure to unzip the entire archive, not just the folder with the sample you want to build. 
@@ -25,3 +25,16 @@ The next steps depend on whether you just want to deploy the sample or you want 
 ### Deploying and running the sample
 
 - To debug the sample and then run it, press F5 or select Debug >  Start Debugging. To run the sample without debugging, press Ctrl+F5 or select Debug > Start Without Debugging. 
+
+### Results
+   ![](Screenshots/Desktop1.png)
+> Firarperest app runs on Desktop. 
+
+   ![](Screenshots/Tablet1.png)
+> Firarperest app runs on Tablet simulator if you don't have a touch based device.
+
+   ![](Screenshots/Hololens.png)
+> Firarperest app runs on Hololens Emulator as 2D application. Since we don't have the device we can test hololens with Hololens Emulator.
+
+   ![](Screenshots/Phone.png)
+> Firarperest app runs on Windows Phone Emulator, if you don't have a windows phone you can test on it.
