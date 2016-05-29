@@ -9,6 +9,9 @@ In this sample project, you will be able understand how you can use Universal Wi
 1. You must have Visual Studio 2015.
 2. You must have Visual Studio 2015 and the Windows Software Development Kit (SDK) for Windows 10 (10.0.10560.0) installed. https://dev.windows.com/en-us/downloads/windows-10-sdk
 
+## Bing Maps API Key (UWP)
+In PageOnMap.xaml in the Firarperest View folder update "MapServiceToken" with your API key from https://www.bingmapsportal.com/
+
 ## Build the sample
 1. If you download the samples ZIP, be sure to unzip the entire archive, not just the folder with the sample you want to build. 
 2. Start Microsoft Visual Studio 2015 and select **File** \> **Open** \> **Project/Solution**.
